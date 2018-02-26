@@ -1,6 +1,6 @@
 <?php
 
-/*Route::get('test', function(){
+Route::get('test', function(){
 	$user = new App\User;
 	$user->name = 'Luis';
 	$user->email = 'mod@gmail.com';
@@ -25,7 +25,7 @@ Route::get('test3', function(){
 	$user->password = bcrypt('123123');
 	$user->save();
 	return $user;
-});*/
+});
 
 
 
