@@ -78,6 +78,8 @@ class MessagesController extends Controller
         $message = $this->messages->store($request);
 
         event(new MessageWasReceived($message));
+
+        session(['info' => 'Mensaje recibido']);
         return redirect()->route('mensajes.create');
 
     }
